@@ -1,32 +1,20 @@
-# Delphi-Projects-Template
+# Link Website Generator
 
 [Cette page en français.](LISEZMOI.md)
 
-**A git repository template for my Delphi (or other) projects.**
+“[Link Website Generator](https://linkwebsitegenerator.olfsoftware.fr)” is a program for generating websites containing mainly links, as offered by many sites with free offers and paid options.
 
-**This template is distributed under the MIT license. The AGPL license is for the projects I create from this code repository template. Use whatever license you want if you use this template.**
+If you already have a domain name or sub-domain and don't want to depend on a service provider for the rest of your life for just a few pages of links, you might as well create a static website and host it once and for all. It's always more ecological and sustainable.
+
+If you prefer to use an online service provider who will offer you hosting as well as space to manage your site, you can try out the following: Linktree, Taplink, Linkpop, Koji, Milkshake, About and many others. But don't forget that if you go through them, you're dependent on them and won't be able to migrate elsewhere the day you want to regain your independence, or if they close down for one reason or another.
 
 This code repository contains a project developed in Object Pascal language under Delphi. You don't know what Delphi is and where to download it ? You'll learn more [on this web site](https://delphi-resources.developpeur-pascal.fr/).
 
 ## Using this software
 
-Visit [the AAA website](https://BBB.olfsoftware.fr)  to download the compiled version, learn more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
-
-## Using this video game
-
-Visit [the AAA website](https://BBB.gamolf.fr)  to download the compiled version, learn more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
+Visit [the Link Website Generator website](https://linkwebsitegenerator.olfsoftware.fr) to download the compiled version, learn more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
 
 ## Talks and conferences
-
-### Online talk
-
-* [talk title](talk URL) (in English)
-* [talk title](talk URL) (in French)
-
-### XXX 2024
-
-* [talk title](talk URL) (in English)
-* [talk title](talk URL) (in French)
 
 ### Twitch
 
@@ -34,12 +22,15 @@ Follow my development streams of software, video games, mobile applications and 
 
 ## Source code installation
 
-To download this code repository, we recommend using "git", but you can also download a ZIP file directly from [its GitHub repository](https://github.com/DeveloppeurPascal/XXXXXXXXXX).
+To download this code repository, we recommend using "git", but you can also download a ZIP file directly from [its GitHub repository](https://github.com/DeveloppeurPascal/Link-Website-Generator).
 
 This project uses dependencies in the form of sub-modules. They will be absent from the ZIP file. You'll have to download them by hand.
 
-* [YYY](ZZZ) must be installed in the ./lib-externes/YYY subfolder.
-* [YYY](ZZZ) must be installed in the ./lib-externes/YYY subfolder.
+* [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) must be installed in the ./lib-externes/AboutDialog-Delphi-Component subfolder.
+* [DeveloppeurPascal/CilTseg4Delphi](https://github.com/DeveloppeurPascal/CilTseg4Delphi) must be installed in the ./lib-externes/CilTseg4Delphi subfolder.
+* [DeveloppeurPascal/FMX-Tools-Starter-Kit](https://github.com/DeveloppeurPascal/FMX-Tools-Starter-Kit) must be installed in the ./lib-externes/FMX-Tools-Starter-Kit subfolder.
+* [DeveloppeurPascal/Delphi-FMXExtend-Library](https://github.com/DeveloppeurPascal/Delphi-FMXExtend-Library) must be installed in the ./lib-externes/Delphi-FMXExtend-Library subfolder.
+* [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) must be installed in the ./lib-externes/librairies subfolder.
 
 ## Documentation and support
 
@@ -47,9 +38,9 @@ I use comments in [XMLDOC](https://docwiki.embarcadero.com/RADStudio/en/XML_Docu
 
 I regularly use the [DocInsight](https://devjetsoftware.com/products/documentation-insight/) tool to enter them and check their formatting.
 
-Documentation is exported in HTML by [DocInsight](https://devjetsoftware.com/products/documentation-insight/) or [PasDoc](https://pasdoc.github.io) to the /docs folder of the repository. You can also [access it online](https://developpeurpascal.github.io/XXXXXXXXXX) through the hosting offered by GitHub Pages.
+Documentation is exported in HTML by [DocInsight](https://devjetsoftware.com/products/documentation-insight/) or [PasDoc](https://pasdoc.github.io) to the /docs folder of the repository. You can also [access it online](https://developpeurpascal.github.io/Link-Website-Generator) through the hosting offered by GitHub Pages.
 
-Further information (tutorials, articles, videos, FAQ, talks and links) can be found on [the project website](https://BBB.developpeur-pascal.fr) or [the project devlog](https://developpeur-pascal.fr/BBB.html).
+Further information (tutorials, articles, videos, FAQ, talks and links) can be found on [the project devlog](https://developpeur-pascal.fr/link-website-generator.html).
 
 If you need explanations or help in understanding or using parts of this project in yours, please [contact me](https://developpeur-pascal.fr/nous-contacter.php). I can either direct you to an online resource, or offer you assistance in the form of a paid or free service, depending on the case. You can also contact me at a conference or during an online presentation.
 
@@ -61,7 +52,7 @@ Normally, my libraries and components should also run on at least the current ve
 
 There's no guarantee of compatibility with earlier versions, even though I try to keep my code clean and avoid using too many of the new ways of writing in it (type inference, inline var and multiline strings).
 
-If you detect any anomalies on earlier versions, please don't hesitate to [report them](https://github.com/DeveloppeurPascal/XXXXXXXXXX/issues) so that I can test and try to correct or provide a workaround.
+If you detect any anomalies on earlier versions, please don't hesitate to [report them](https://github.com/DeveloppeurPascal/Link-Website-Generator/issues) so that I can test and try to correct or provide a workaround.
 
 ## License to use this code repository and its contents
 
@@ -72,15 +63,13 @@ You are free to use the contents of this code repository anywhere provided :
 * distribute the modifications made to the files provided in this AGPL-licensed project (leaving the original copyright notices (author, link to this repository, license) must be supplemented by your own)
 * to distribute the source code of your creations under the AGPL license.
 
-If this license doesn't suit your needs (especially for a commercial project) I also offer [classic licenses for developers and companies](https://BBB.developpeur-pascal.fr).
-
 Some elements included in this repository may depend on third-party usage rights (images, sounds, etc.). They are not reusable in your projects unless otherwise stated.
 
 The source codes of this code repository as well as any compiled version are provided “as is” without warranty of any kind.
 
 ## How to ask a new feature, report a bug or a security issue ?
 
-If you want an answer from the project owner the best way to ask for a new feature or report a bug is to go to [the GitHub repository](https://github.com/DeveloppeurPascal/XXXXXXXXXX) and [open a new issue](https://github.com/DeveloppeurPascal/XXXXXXXXXX/issues).
+If you want an answer from the project owner the best way to ask for a new feature or report a bug is to go to [the GitHub repository](https://github.com/DeveloppeurPascal/Link-Website-Generator) and [open a new issue](https://github.com/DeveloppeurPascal/Link-Website-Generator/issues).
 
 If you found a security issue please don't report it publicly before a patch is available. Explain the case by [sending a private message to the author](https://developpeur-pascal.fr/nous-contacter.php).
 
