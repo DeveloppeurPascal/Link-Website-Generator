@@ -25,8 +25,8 @@
 /// https://github.com/DeveloppeurPascal/Link-Website-Generator
 ///
 /// ***************************************************************************
-/// File last update : 2025-02-26T21:03:22.000+01:00
-/// Signature : 983c55e8c36b1bf9910811b1f07a0d68e47243f8
+/// File last update : 2025-02-27T11:22:42.000+01:00
+/// Signature : eff989c8a2f42eed914bc8fd780902ce7bc4bd89
 /// ***************************************************************************
 /// </summary>
 
@@ -47,8 +47,8 @@ const
   /// Version number of your project.
   /// </summary>
   /// <remarks>
-  /// To update when you publish a new release of this project.
-  /// Don't forget to update the Version Infos in the Project/Options dialog.
+  /// To update when you publish a new release of this project. Don't forget
+  /// to update the Version Infos in the Project/Options dialog.
   /// </remarks>
   CAboutVersionNumber = '1.0';
 
@@ -76,8 +76,8 @@ const
   CAboutURL = 'https://linkwebsitegenerator.olfsoftware.fr/';
 
   /// <summary>
-  /// The URL where you can buy the software.
-  /// (if not empty, a "Buy" button is added in the About Box)
+  /// The URL where you can buy the software. (if not empty, a "Buy" button is
+  /// added in the About Box)
   /// </summary>
   CSoftwareBuyURL = CAboutURL;
 
@@ -90,9 +90,10 @@ const
   /// Used as a folder name to store your projects settings
   /// </summary>
   /// <remarks>
-  /// Don't use a path, only a name to use as a folder name.
-  /// The real paths are calculated automatically depending on the platform.
-  /// for example your name, label or company name (avoid spaces, accents and special characters)
+  /// Don't use a path, only a name to use as a folder name. The real paths
+  /// are calculated automatically depending on the platform. for example your
+  /// name, label or company name (avoid spaces, accents and special
+  /// characters)
   /// </remarks>
   CEditorFolderName = 'OlfSoftware';
 
@@ -100,9 +101,9 @@ const
   /// Used as a subfolder name to store your projects settings
   /// </summary>
   /// <remarks>
-  /// Don't use a path, only a name to use a a folder name.
-  /// The real paths are calculated automatically depending on the platform.
-  /// for exemple your project title (avoid spaces, accents and special characters)
+  /// Don't use a path, only a name to use a a folder name. The real paths are
+  /// calculated automatically depending on the platform. for exemple your
+  /// project title (avoid spaces, accents and special characters)
   /// </remarks>
   CProjectFolderName = 'LinkWebsiteGenerator';
 
@@ -112,15 +113,14 @@ const
 
 const
   /// <summary>
-  /// Available languages in this project as an array of 2 letters language ISO
-  /// code strings.
+  /// Available languages in this project as an array of 2 letters language
+  /// ISO code strings.
   /// </summary>
   /// <remarks>
   /// To define the languages list by code, fill the global variable
   /// "GLanguages". By default it will contain the same values than
-  /// "CLanguages".
-  /// If you don't use default language selection, translation or options
-  /// dialog, ignore this constant.
+  /// "CLanguages". If you don't use default language selection, translation
+  /// or options dialog, ignore this constant.
   /// </remarks>
   CLanguages: array [0 .. 1] of string = ('en', 'fr');
 
@@ -131,16 +131,16 @@ var
   /// <remarks>
   /// By default it's filled by CLanguages but you can give an other value by
   /// code in your program. It's used in the SelectLanguage screen called by
-  /// Tools/Languages default action.
-  /// If you don't use default language selection, you can ignore this variable.
+  /// Tools/Languages default action. If you don't use default language
+  /// selection, you can ignore this variable.
   /// </remarks>
   GLanguages: TStringDynArray;
 
 const
   /// <summary>
-  /// Default language used if the system language is not supported
-  /// (of course you have to translate all textes of the program in this
-  /// language, so use yours or English by default)
+  /// Default language used if the system language is not supported (of course
+  /// you have to translate all textes of the program in this language, so use
+  /// yours or English by default)
   /// </summary>
   /// <remarks>
   /// Use 2 letters ISO code
@@ -198,11 +198,10 @@ const
     ************************************************************************** }
 type
   /// <summary>
-  /// How to manage project documents ?
-  /// None - no default options or features about documents editing.
-  /// Solo - edit only one document at a time, if "New" or "Open" are used,
-  /// current document is closed.
-  /// Multi - allow opening/creating more than one document at the same time
+  /// How to manage project documents ? None - no default options or features
+  /// about documents editing. Solo - edit only one document at a time, if
+  /// "New" or "Open" are used, current document is closed. Multi - allow
+  /// opening/creating more than one document at the same time
   /// </summary>
   TDocumentsMode = (None, Mono, Multi);
 
@@ -217,8 +216,8 @@ const
   /// Maximum number of documents listed in the "File/Open recent" menu item
   /// </summary>
   /// <remarks>
-  /// Used as a default config value.
-  /// If "0" then the "open recents documents" menu is disabled by default.
+  /// Used as a default config value. If "0" then the "open recents documents"
+  /// menu is disabled by default.
   /// </remarks>
   COpenPreviousDocumentsMaxCount = 10;
 
@@ -258,6 +257,9 @@ type
     CilTseg);
 
 const
+  /// <summary>
+  /// What license manager is used by the starter kit in this project ?
+  /// </summary>
   CUsedLicenseManager = TLicenseManagers.CilTseg;
 
   { ****************************************************************************
@@ -274,8 +276,8 @@ type
     /// </summary>
     None,
     /// <summary>
-    /// Allow options to check and download new versions of this program,
-    /// but you have to code it !
+    /// Allow options to check and download new versions of this program, but
+    /// you have to code it !
     /// </summary>
     Manual,
     /// <summary>
@@ -284,6 +286,10 @@ type
     CilTseg);
 
 const
+  /// <summary>
+  /// What system is used by the starter kit to detect and download new
+  /// releases of this program ?
+  /// </summary>
   CUsedProgramUpdatesManager = TProgramUpdatesManagers.CilTseg;
 
   { ****************************************************************************
@@ -348,13 +354,14 @@ const
   CShowAboutBoxWithF1 = true;
 
   /// <summary>
-  /// Close active form with ESCape key
-  /// (and close the program if you are on the main form)
+  /// Close active form with ESCape key (and close the program if you are on
+  /// the main form)
   /// </summary>
   CExitWithEscapeKey = true;
 
   /// <summary>
-  /// Enable or disable the memory leaks report on shutdown for Windows platform.
+  /// Enable or disable the memory leaks report on shutdown for Windows
+  /// platform.
   /// </summary>
   CReportMemoryLeaksOnShutdown = {$IFDEF DEBUG}true{$ELSE}false{$ENDIF};
 
