@@ -25,8 +25,8 @@
   https://github.com/DeveloppeurPascal/Link-Website-Generator
 
   ***************************************************************************
-  File last update : 2025-07-16T14:35:22.000+02:00
-  Signature : 391890b4dba7934ea0350c4bd891d74c33f4b24b
+  File last update : 2025-07-16T17:16:20.000+02:00
+  Signature : dc1ce81b6627defb8dac6d47c43299144f228d81
   ***************************************************************************
 *)
 
@@ -76,7 +76,8 @@ uses
   uStyleManager in '..\lib-externes\FMX-Styles-Utils\src\uStyleManager.pas',
   uStyleDarkByDefault in '..\lib-externes\FMX-Styles-Utils\samples\DarkLightSampleProject\uStyleDarkByDefault.pas' {StyleDarkByDefault: TDataModule},
   uStyleLightByDefault in '..\lib-externes\FMX-Styles-Utils\samples\DarkLightSampleProject\uStyleLightByDefault.pas' {StyleLightByDefault: TDataModule},
-  uStyleManagerHelpers in '..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManagerHelpers.pas';
+  uStyleManagerHelpers in '..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManagerHelpers.pas',
+  uLWG_Projects in 'uLWG_Projects.pas';
 
 {$R *.res}
 

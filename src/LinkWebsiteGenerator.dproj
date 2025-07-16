@@ -602,6 +602,7 @@
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManagerHelpers.pas"/>
+        <DCCReference Include="uLWG_Projects.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
