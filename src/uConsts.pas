@@ -25,8 +25,8 @@
   https://github.com/DeveloppeurPascal/Link-Website-Generator
 
   ***************************************************************************
-  File last update : 2025-07-16T14:46:00.000+02:00
-  Signature : 32467792ad8d35c0036b0d70511a7adb458390f5
+  File last update : 2025-07-16T14:56:58.000+02:00
+  Signature : cd0cc1bc0e25cbf1aa4a7e74cdb4a6fa19105d77
   ***************************************************************************
 *)
 
