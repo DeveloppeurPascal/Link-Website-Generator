@@ -1,34 +1,34 @@
-﻿/// <summary>
-/// ***************************************************************************
-///
-/// Link Website Generator
-///
-/// Copyright 2025 Patrick Premartin under AGPL 3.0 license.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-/// DEALINGS IN THE SOFTWARE.
-///
-/// ***************************************************************************
-///
-/// Author(s) :
-/// Patrick PREMARTIN
-///
-/// Site :
-/// https://linkwebsitegenerator.olfsoftware.fr/
-///
-/// Project site :
-/// https://github.com/DeveloppeurPascal/Link-Website-Generator
-///
-/// ***************************************************************************
-/// File last update : 2025-02-26T20:46:18.000+01:00
-/// Signature : be7476d40eb02a98fe829a3670d0be2dee077215
-/// ***************************************************************************
-/// </summary>
+﻿(* C2PP
+  ***************************************************************************
+
+  Link Website Generator
+
+  Copyright 2025 Patrick Premartin under AGPL 3.0 license.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+  ***************************************************************************
+
+  Author(s) :
+  Patrick PREMARTIN
+
+  Site :
+  https://linkwebsitegenerator.olfsoftware.fr/
+
+  Project site :
+  https://github.com/DeveloppeurPascal/Link-Website-Generator
+
+  ***************************************************************************
+  File last update : 2025-07-16T14:39:08.000+02:00
+  Signature : 3a75e836bff54c6cd233e0c0a0629665f12a1180
+  ***************************************************************************
+*)
 
 unit uTxtAboutLicense;
 
@@ -46,9 +46,24 @@ uses
   System.SysUtils,
   uConsts;
 
-const // TODO : mettre à jour la licence d'utilisation du programme
-  CTxtEN = 'your EULA (end user license agreement)';
-  CTxtFR = '';
+const
+  CTxtEN = '''
+This program is distributed as shareware. If you use it (especially for commercial or income-generating purposes), please remember the author and contribute to its development by purchasing a license.
+
+This software is supplied as is, with or without bugs. No warranty is offered as to its operation or the data processed. Make backups!
+
+''';
+  CTxtFR = '''
+Ce programme est distribué en tant que shareware. Si vous l'utilisez (en particulier à des fins commerciales ou rémunératrices), merci de vous souvenir de l'auteur et de contribuer à son développement en achetant une licence.
+
+Ce logiciel est fourni tel quel, avec ou sans bogues. Aucune garantie n'est offerte quant à son fonctionnement ou aux données traitées. Faites des sauvegardes !
+
+''';
+  // CTxtIT = '';
+  // CTxtDE = '';
+  // CTxtJP = '';
+  // CTxtPT = '';
+  // CTxtES = '';
 
 function GetTxtAboutLicense(const Language: string;
   const Recursif: boolean): string;
