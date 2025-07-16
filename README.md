@@ -10,6 +10,8 @@ If you prefer to use an online service provider who will offer you hosting as we
 
 This code repository contains a project developed in Object Pascal language under Delphi. You don't know what Delphi is and where to download it ? You'll learn more [on this web site](https://delphi-resources.developpeur-pascal.fr/).
 
+This program is a client interface to edit a website using [this server](https://github.com/DeveloppeurPascal/Link-Website-Server).
+
 ## Using this software
 
 Visit [the Link Website Generator website](https://linkwebsitegenerator.olfsoftware.fr) to download the compiled version, learn more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...

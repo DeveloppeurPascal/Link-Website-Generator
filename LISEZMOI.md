@@ -10,6 +10,8 @@ Si vous préférez passer par un prestataire en ligne qui vous proposera un héb
 
 Ce dépôt de code contient un projet développé en langage Pascal Objet sous Delphi. Vous ne savez pas ce qu'est Dephi ni où le télécharger ? Vous en saurez plus [sur ce site web](https://delphi-resources.developpeur-pascal.fr/).
 
+Ce programme est une interface utilisateur de mise à jour des sites utilisant [ce serveur](https://github.com/DeveloppeurPascal/Link-Website-Server).
+
 ## Utiliser ce logiciel
 
 Consultez [le site de Link Website Generator](https://linkwebsitegenerator.olfsoftware.fr) pour télécharger sa version compilée, en savoir plus sur son fonctionnement, accéder à des vidéos et articles, connaître les différentes versions disponibles et leurs fonctionnalités, contacter le support utilisateurs...
