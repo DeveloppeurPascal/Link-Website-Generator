@@ -1,34 +1,34 @@
-﻿/// <summary>
-/// ***************************************************************************
-///
-/// Link Website Generator
-///
-/// Copyright 2025 Patrick Premartin under AGPL 3.0 license.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-/// DEALINGS IN THE SOFTWARE.
-///
-/// ***************************************************************************
-///
-/// Author(s) :
-/// Patrick PREMARTIN
-///
-/// Site :
-/// https://linkwebsitegenerator.olfsoftware.fr/
-///
-/// Project site :
-/// https://github.com/DeveloppeurPascal/Link-Website-Generator
-///
-/// ***************************************************************************
-/// File last update : 2025-02-27T11:22:42.000+01:00
-/// Signature : eff989c8a2f42eed914bc8fd780902ce7bc4bd89
-/// ***************************************************************************
-/// </summary>
+﻿(* C2PP
+  ***************************************************************************
+
+  Link Website Generator
+
+  Copyright 2025 Patrick Premartin under AGPL 3.0 license.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+  ***************************************************************************
+
+  Author(s) :
+  Patrick PREMARTIN
+
+  Site :
+  https://linkwebsitegenerator.olfsoftware.fr/
+
+  Project site :
+  https://github.com/DeveloppeurPascal/Link-Website-Generator
+
+  ***************************************************************************
+  File last update : 2025-07-16T14:46:00.000+02:00
+  Signature : 32467792ad8d35c0036b0d70511a7adb458390f5
+  ***************************************************************************
+*)
 
 unit uConsts;
 
@@ -58,7 +58,7 @@ const
   /// <remarks>
   /// To update when you publish a new release of this project.
   /// </remarks>
-  CAboutVersionDate = '20250226';
+  CAboutVersionDate = '20250716';
 
   /// <summary>
   /// Title of your project used in the About box and as the main form caption
@@ -84,7 +84,8 @@ const
   /// <summary>
   /// Website open by Tools / Support menu option
   /// </summary>
-  CSupportURL = '';
+  CSupportURL = 'https://olfsoftware.fr/contact';
+  // TODO : à remplacer par le lien vers le système de ticket du logiciel
 
   /// <summary>
   /// Used as a folder name to store your projects settings
@@ -260,8 +261,11 @@ const
   /// <summary>
   /// What license manager is used by the starter kit in this project ?
   /// </summary>
+{$IFDEF RELEASE}
   CUsedLicenseManager = TLicenseManagers.CilTseg;
-
+{$ELSE}
+  CUsedLicenseManager = TLicenseManagers.None;
+{$ENDIF}
   { ****************************************************************************
     Program updates management settings
     ************************************************************************** }
