@@ -25,8 +25,8 @@
   https://github.com/DeveloppeurPascal/Link-Website-Generator
 
   ***************************************************************************
-  File last update : 2025-07-16T17:35:48.000+02:00
-  Signature : 0bdf17eee6c4077d6cb5991c7660e08bdf69bcb0
+  File last update : 2025-07-16T17:55:32.000+02:00
+  Signature : 613865ed26e80d300406205e0bf46d3fe2cb7331
   ***************************************************************************
 *)
 
@@ -129,7 +129,7 @@ begin
 {$IF Defined(RELEASE)}
 {$I '..\_PRIVATE\src\WebsiteProjectFileXORKey.inc'}
 {$ELSE}
-result := [];
+  result := [];
 {$ENDIF}
 end;
 
@@ -163,27 +163,47 @@ end;
 
 procedure TWebsiteProject.SetAPI_Download_Endpoint(const Value: string);
 begin
-  FAPI_Download_Endpoint := Value;
+  if (FAPI_Download_Endpoint <> Value) then
+  begin
+    FAPI_Download_Endpoint := Value;
+    SetHasChanged(true);
+  end;
 end;
 
 procedure TWebsiteProject.SetAPI_PrivKey(const Value: string);
 begin
-  FAPI_PrivKey := Value;
+  if (FAPI_PrivKey <> Value) then
+  begin
+    FAPI_PrivKey := Value;
+    SetHasChanged(true);
+  end;
 end;
 
 procedure TWebsiteProject.SetAPI_PubKey(const Value: string);
 begin
-  FAPI_PubKey := Value;
+  if (FAPI_PubKey <> Value) then
+  begin
+    FAPI_PubKey := Value;
+    SetHasChanged(true);
+  end;
 end;
 
 procedure TWebsiteProject.SetAPI_Upload_Endpoint(const Value: string);
 begin
-  FAPI_Upload_Endpoint := Value;
+  if (FAPI_Upload_Endpoint <> Value) then
+  begin
+    FAPI_Upload_Endpoint := Value;
+    SetHasChanged(true);
+  end;
 end;
 
 procedure TWebsiteProject.SetAPI_URL(const Value: string);
 begin
-  FAPI_URL := Value;
+  if (FAPI_URL <> Value) then
+  begin
+    FAPI_URL := Value;
+    SetHasChanged(true);
+  end;
 end;
 
 end.
