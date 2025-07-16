@@ -1,34 +1,34 @@
-﻿/// <summary>
-/// ***************************************************************************
-///
-/// Link Website Generator
-///
-/// Copyright 2025 Patrick Premartin under AGPL 3.0 license.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-/// DEALINGS IN THE SOFTWARE.
-///
-/// ***************************************************************************
-///
-/// Author(s) :
-/// Patrick PREMARTIN
-///
-/// Site :
-/// https://linkwebsitegenerator.olfsoftware.fr/
-///
-/// Project site :
-/// https://github.com/DeveloppeurPascal/Link-Website-Generator
-///
-/// ***************************************************************************
-/// File last update : 2025-02-26T20:37:34.000+01:00
-/// Signature : d268dd6d894a34af5c68e49599cfd9eef1ad19e4
-/// ***************************************************************************
-/// </summary>
+﻿(* C2PP
+  ***************************************************************************
+
+  Link Website Generator
+
+  Copyright 2025 Patrick Premartin under AGPL 3.0 license.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+  ***************************************************************************
+
+  Author(s) :
+  Patrick PREMARTIN
+
+  Site :
+  https://linkwebsitegenerator.olfsoftware.fr/
+
+  Project site :
+  https://github.com/DeveloppeurPascal/Link-Website-Generator
+
+  ***************************************************************************
+  File last update : 2025-07-16T14:36:16.000+02:00
+  Signature : 71cc66557b9b1a2645d51d1b0f23c294bf116940
+  ***************************************************************************
+*)
 
 unit fMainForm;
 
@@ -56,7 +56,8 @@ type
   TMainForm = class(T__MainFormAncestor)
   private
   protected
-    function GetNewDoc: TDocumentAncestor; override;
+    function GetNewDoc(const FileName: string = ''): TDocumentAncestor;
+      override;
   public
 
   end;
@@ -67,12 +68,10 @@ var
 implementation
 
 {$R *.fmx}
-{ TMainForm }
 
-function TMainForm.GetNewDoc: TDocumentAncestor;
+function TMainForm.GetNewDoc(const FileName: string): TDocumentAncestor;
 begin
-  // TODO : replace by your document class
-  result := TDocumentAncestor.Create;
+  result := nil; // TODO : à compléter
 end;
 
 end.
