@@ -25,8 +25,8 @@
   https://github.com/DeveloppeurPascal/Link-Website-Generator
 
   ***************************************************************************
-  File last update : 2025-07-16T14:36:16.000+02:00
-  Signature : 71cc66557b9b1a2645d51d1b0f23c294bf116940
+  File last update : 2025-07-16T18:12:06.000+02:00
+  Signature : 7fb6cf9872f94f7e61e7e1640b1b734afe1bcf61
   ***************************************************************************
 *)
 
@@ -69,9 +69,26 @@ implementation
 
 {$R *.fmx}
 
+uses
+  System.IOUtils,
+  uLWG_Projects;
+
 function TMainForm.GetNewDoc(const FileName: string): TDocumentAncestor;
 begin
-  result := nil; // TODO : à compléter
+  if (not FileName.trim.IsEmpty) then
+  begin
+    if (comparetext(tpath.GetExtension(FileName),
+      '.' + result.GetDocumentExtension) = 0) and TFile.Exists(FileName) then
+    begin
+      result := TWebsiteProject.Create;
+      result.LoadFromFile(FileName);
+    end
+    else
+      raise Exception.Create('Can''t open this file !');
+    // TODO : traduire texte
+  end
+  else
+    result := TWebsiteProject.Create;
 end;
 
 end.
