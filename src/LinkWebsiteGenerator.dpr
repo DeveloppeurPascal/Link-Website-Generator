@@ -1,34 +1,34 @@
-﻿/// <summary>
-/// ***************************************************************************
-///
-/// Link Website Generator
-///
-/// Copyright 2025 Patrick Premartin under AGPL 3.0 license.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-/// DEALINGS IN THE SOFTWARE.
-///
-/// ***************************************************************************
-///
-/// Author(s) :
-/// Patrick PREMARTIN
-///
-/// Site :
-/// https://linkwebsitegenerator.olfsoftware.fr/
-///
-/// Project site :
-/// https://github.com/DeveloppeurPascal/Link-Website-Generator
-///
-/// ***************************************************************************
-/// File last update : 2025-02-26T20:41:56.000+01:00
-/// Signature : 97af8f17d7a82132321b5827e0a592e895087a27
-/// ***************************************************************************
-/// </summary>
+﻿(* C2PP
+  ***************************************************************************
+
+  Link Website Generator
+
+  Copyright 2025 Patrick Premartin under AGPL 3.0 license.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+  ***************************************************************************
+
+  Author(s) :
+  Patrick PREMARTIN
+
+  Site :
+  https://linkwebsitegenerator.olfsoftware.fr/
+
+  Project site :
+  https://github.com/DeveloppeurPascal/Link-Website-Generator
+
+  ***************************************************************************
+  File last update : 2025-07-16T14:35:22.000+02:00
+  Signature : 391890b4dba7934ea0350c4bd891d74c33f4b24b
+  ***************************************************************************
+*)
 
 program LinkWebsiteGenerator;
 
@@ -55,10 +55,6 @@ uses
   uDocumentsAncestor in '..\lib-externes\FMX-Tools-Starter-Kit\src\uDocumentsAncestor.pas',
   Olf.RTL.Streams in '..\lib-externes\librairies\src\Olf.RTL.Streams.pas',
   Olf.RTL.Maths.Conversions in '..\lib-externes\librairies\src\Olf.RTL.Maths.Conversions.pas',
-  uStyleManager in '..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManager.pas',
-  _StyleContainerAncestor in '..\lib-externes\FMX-Tools-Starter-Kit\src\_StyleContainerAncestor.pas' {__StyleContainerAncestor: TDataModule},
-  uStyleLightByDefault in '..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleLightByDefault.pas' {StyleLightByDefault: TDataModule},
-  uStyleDarkByDefault in '..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleDarkByDefault.pas' {StyleDarkByDefault: TDataModule},
   Olf.RTL.SystemAppearance in '..\lib-externes\librairies\src\Olf.RTL.SystemAppearance.pas',
   fToolsStylesDialog in '..\lib-externes\FMX-Tools-Starter-Kit\src\fToolsStylesDialog.pas' {frmToolsStylesDialog},
   fToolsLanguagesDialog in '..\lib-externes\FMX-Tools-Starter-Kit\src\fToolsLanguagesDialog.pas' {frmToolsLanguagesDialog},
@@ -70,7 +66,17 @@ uses
   uStyleImpressiveDark in '..\_PRIVATE\src\uStyleImpressiveDark.pas' {StyleImpressiveDark: TDataModule},
   uStyleImpressiveLight in '..\_PRIVATE\src\uStyleImpressiveLight.pas' {StyleImpressiveLight: TDataModule},
   uStylePolarDark in '..\_PRIVATE\src\uStylePolarDark.pas' {StylePolarDark: TDataModule},
-  uStylePolarLight in '..\_PRIVATE\src\uStylePolarLight.pas' {StylePolarLight: TDataModule};
+  uStylePolarLight in '..\_PRIVATE\src\uStylePolarLight.pas' {StylePolarLight: TDataModule},
+  uGetDeviceName in '..\lib-externes\librairies\src\uGetDeviceName.pas',
+  uStyleCoralCrystal in '..\lib-externes\FMX-Tools-Starter-Kit\samples\01-NoDocProject\uStyleCoralCrystal.pas',
+  uStyleGoldenGraphite in '..\lib-externes\FMX-Tools-Starter-Kit\samples\01-NoDocProject\uStyleGoldenGraphite.pas',
+  uStyleTransparent in '..\lib-externes\FMX-Tools-Starter-Kit\samples\01-NoDocProject\uStyleTransparent.pas',
+  uStyleWin10ModernBlue in '..\lib-externes\FMX-Tools-Starter-Kit\samples\01-NoDocProject\uStyleWin10ModernBlue.pas',
+  _StyleContainerAncestor in '..\lib-externes\FMX-Styles-Utils\src\_StyleContainerAncestor.pas' {__StyleContainerAncestor: TDataModule},
+  uStyleManager in '..\lib-externes\FMX-Styles-Utils\src\uStyleManager.pas',
+  uStyleDarkByDefault in '..\lib-externes\FMX-Styles-Utils\samples\DarkLightSampleProject\uStyleDarkByDefault.pas' {StyleDarkByDefault: TDataModule},
+  uStyleLightByDefault in '..\lib-externes\FMX-Styles-Utils\samples\DarkLightSampleProject\uStyleLightByDefault.pas' {StyleLightByDefault: TDataModule},
+  uStyleManagerHelpers in '..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManagerHelpers.pas';
 
 {$R *.res}
 
