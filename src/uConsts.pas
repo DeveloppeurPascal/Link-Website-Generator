@@ -80,6 +80,7 @@ const
   /// added in the About Box)
   /// </summary>
   CSoftwareBuyURL = CAboutURL;
+  // TODO : à remplacer par le lien vers l boutique en ligne une fois la fiche active (en anglais)
 
   /// <summary>
   /// Website open by Tools / Support menu option
