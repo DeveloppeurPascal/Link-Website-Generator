@@ -5,7 +5,7 @@
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>693267</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>LinkWebsiteGenerator.dpr</MainSource>
@@ -603,6 +603,7 @@
         </DCCReference>
         <DCCReference Include="..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManagerHelpers.pas"/>
         <DCCReference Include="uLWG_Projects.pas"/>
+        <DCCReference Include="uLWG_Database.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -718,12 +719,6 @@
                 <DeployFile LocalName="Win64\Debug\LinkWebsiteGenerator.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win64">
                         <RemoteName>LinkWebsiteGenerator.exe</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Win64\Debug\LinkWebsiteGenerator.rsm" Configuration="Debug" Class="DebugSymbols">
-                    <Platform Name="Win64">
-                        <RemoteName>LinkWebsiteGenerator.rsm</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
