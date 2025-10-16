@@ -43,7 +43,7 @@ I regularly use the [DocInsight](https://devjetsoftware.com/products/documentati
 
 Documentation is exported in HTML by [DocInsight](https://devjetsoftware.com/products/documentation-insight/) or [PasDoc](https://pasdoc.github.io) to the /docs folder of the repository. You can also [access it online](https://developpeurpascal.github.io/Link-Website-Generator) through the hosting offered by GitHub Pages.
 
-Further information (tutorials, articles, videos, FAQ, talks and links) can be found on [the project devlog](https://developpeur-pascal.fr/link-website-generator.html).
+Further information (tutorials, articles, videos, FAQ, talks and links) can be found on [the project website](https://linkwebsitegenerator.olfsoftware.fr) or [the project devlog](https://developpeur-pascal.fr/link-website-generator.html).
 
 If you need explanations or help in understanding or using parts of this project in yours, please [contact me](https://developpeur-pascal.fr/nous-contacter.php). I can either direct you to an online resource, or offer you assistance in the form of a paid or free service, depending on the case. You can also contact me at a conference or during an online presentation.
 
@@ -65,6 +65,8 @@ You are free to use the contents of this code repository anywhere provided :
 * you mention it in your projects
 * distribute the modifications made to the files provided in this AGPL-licensed project (leaving the original copyright notices (author, link to this repository, license) must be supplemented by your own)
 * to distribute the source code of your creations under the AGPL license.
+
+If this license doesn't suit your needs (especially for a commercial project) I also offer [classic licenses for developers and companies](https://linkwebsitegenerator.olfsoftware.fr).
 
 Some elements included in this repository may depend on third-party usage rights (images, sounds, etc.). They are not reusable in your projects unless otherwise stated.
 
